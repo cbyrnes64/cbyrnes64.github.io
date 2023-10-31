@@ -18,16 +18,28 @@
 
     <style>
 
-      @import url('https://fonts.googleapis.com/css2?family=Sarabun&family=Trykker&display=swap');
+/*      @import url('https://fonts.googleapis.com/css2?family=Sarabun&family=Trykker&display=swap');*/
 
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sarabun&family=Trykker&display=swap');
      
-      .serif, h1, h2, h3, h4, h5, h6 {
+      :root {
+        --pink: rgb(213, 168, 168);
+        --light-pink: rgba(213, 168, 168, 0.4);
+      }
+
+      .serif {
         font-family: 'Trykker', serif;
+      }
+
+      .cursive, h1 {
+        font-family: 'Dancing Script', cursive;
       }
 
       .sansserif, p, span {
         font-family: 'Sarabun', sans-serif;
       }
+
+
 
       a {
         color: #212529 !important;
@@ -70,9 +82,9 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end">
           <ul class="nav nav-pills justify-content-end">
-            <li class="nav-item">
+           <!--  <li class="nav-item">
               <a class="nav-link" href="#mission">Mission</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#about">About Me</a>
             </li>
@@ -94,7 +106,7 @@
         <div class="row mt-5">
           <div class="col-md-12 text-center">
             <h1 class="">Christine Byrnes Transformational Coaching</h1>
-            <h2 class="lead">There is more and it is just the beginning.</h2>
+            <p class="lead">There is more and it is just the beginning.</p>
           </div>
         </div>
 
@@ -102,7 +114,7 @@
           <div class="col-md-4 text-center">
             <img class="img-fluid" src="img/Christine.JPG"/>
 
-            <button class="btn btn-dark mt-3" data-bs-toggle="modal" data-bs-target="#contact-modal">Contact Me</button>
+            <button class="btn btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#contact-modal" style="background-color: var(--light-pink)">Contact Me</button>
 
             <!-- contact -->
             <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal" aria-hidden="true">
@@ -129,7 +141,7 @@
               Welcome to my page. You have taken the first step toward Personal Transformation. My focus and passion are helping women who are at a pivotal place in their lives; a crossroad, whether that be a separation in a relationship, empty nest syndrome, feeling lost, or more importantly, a desire to prioritize yourself and discover your life purpose.  
             </p>
             <p class="text-center lead">
-              <em>We have two lives and the second one begins when we realize we only have one.</em> ~Confucious
+              <em>"We have two lives and the second one begins when we realize we only have one."</em><br> ~Confucious
             </p>
             <p>
               I live life guided by this quote, as it highlights the urgency to live life with purpose. Additionally, this quote also has a profound impact on the way we think because once you realize your time on this earth is limited, especially as you approach middle age, it reminds you to consciously prioritize the way you live each day of your life.  
@@ -146,6 +158,14 @@
           </div>
         </div>
       </div>
+
+      <div class="container mt-5">
+        <div class="row mt-5">
+          <div class="col-md-12 text-center mt-5">
+            <img class="img-fluid w-75" src="img/hands.jpg" />
+          </div>
+        </div>
+      </div>
       
       <!-- <div id="contact" class="container pt-5">
         <div class="row justify-content-center pt-5">
@@ -158,12 +178,12 @@
       <div id="mission" class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="text-center">Mission</h1>
+            <h1 class="text-center">A Unique Approach for Every Client</h1>
             <p>Transformational Coaching is a metamorphosis. My style and approach towards coaching will allow you to grow and evolve on a deep soul based level, which will lead to a complete transformation. It is time to live as your authentic self, and this is your invitation to do just that.
             </p>
-            <p>I have developed a unique method of transformation that incorporates a multi-dimensional alternative approach which guides you to achieve self-growth, empowerment, confidence, and direction.</p>
+            <p>I have developed an individualized therapeutic method of transformation that incorporates a multi-dimensional alternative approach which guides you to achieve self-growth, empowerment, confidence, and direction.</p>
             <p>
-            Transformational Life Coaching includes <a href="#" data-bs-toggle="modal" data-bs-target="#nlp-modal">Neuro-Linguistic Programming (NLP)</a>, Breakthrough Sessions, <a href="#" data-bs-toggle="modal" data-bs-target="#mer-modal">Mental and Emotional Release (MER)</a>, Hypnotherapy, Astrological Counseling, & Past Life Regression.</p>
+            Transformational Life Coaching includes <a href="#" data-bs-toggle="modal" data-bs-target="#nlp-modal">Neuro-Linguistic Programming (NLP)</a>, <a href="#" data-bs-toggle="modal" data-bs-target="#mer-modal">Mental and Emotional Release® (MER)</a>, Hypnotherapy, Astrological Counseling, Past Life Regression, & Breakthrough Sessions.</p>
 
             <p>Immerse yourself on an empowering journey to work on releasing any emotional baggage that you are holding onto, outdated patterns of behavior or any limited beliefs, so that you can achieve the life you have always dreamed of.
             </p>
@@ -183,9 +203,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
-            <img class="img-fluid" src="img/hands.jpg"/>
-            <p class="mt-3"><strong>Christine is Board Certified by the (AIP) Association for Integrative Psychology as a Master Practitioner of <a href="#" data-bs-toggle="modal" data-bs-target="#nlp-modal">Neuro-Linguistic Programming (NLP)</a>, Hypnotherapy, and <a href="#" data-bs-toggle="modal" data-bs-target="#mer-modal">Mental and Emotional Release® Therapy</a>. She is also Certified Life Coach, Certified Past Life Regression Therapist, Reiki 2 Certified, and Astrological Counselor.</strong></p>
+          <div class="col-sm-4 mt-3">
+            <img class="img-fluid" src="img/hair.jpg"/>
+            <p class="mt-3"><strong>Christine is Board Certified by the (AIP) Association for Integrative Psychology as a Master Practitioner of <a href="#" data-bs-toggle="modal" data-bs-target="#nlp-modal">Neuro-Linguistic Programming (NLP)</a>, Hypnotherapy, and <a href="#" data-bs-toggle="modal" data-bs-target="#mer-modal">Mental and Emotional Release® Therapy</a>. She is also Certified Life Coach, Certified Past Life Regression Therapist, and Astrological Counselor.</strong></p>
           </div>
           <div class="col-md-8 mt-3">
             <p>
@@ -239,7 +259,7 @@
               </div>
               <div class="card-body price">
                 <p class="card-text lead">
-                  $100/Hour
+                  1 Hour Session
                 </p>
               </div>
             </div>
@@ -247,27 +267,27 @@
 
           <div class="col-sm-6 mt-4">
             <div class="card" style="">
-              <img src="img/circle.jpg" class="card-img-top" alt="">
+              <img src="img/desk.jpg" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">Astrological Counseling</h5>
                 <p class="card-text">
+                  Astrological Counseling is therapeutic Astrology - Astrology that seeks to heal and empower through providing deeper levels of self awareness and understanding of the meaning behind our experiences. When we come to understand the events in our lives not as random but as purposeful evolutionary cycles we can work creatively with whatever life throws our way - even our most challenging lessons. 
+
                   <ul>
                     <li>
                       <h6>Natal Chart Reading</h6>
-                      The day you were born the Sun, Moon, and Planets aligned and therein lies the "blueprint" of who you are: you are unique! Your Astrological Birth Chart maps out all areas in life and describes your "nature" and your karma in this lifetime. Was your childhood troubled? Are you a go-getter in your career? Do you have trouble in relationships? Are you impulsive? Anxious? A great communicator? A student of life? What is your destiny? Your natal chart will reveal it all! I will discuss the positives and how they can be enhanced, as well as point out any challenges so you can begin to focus and work on them.
+                      The day you were born the Sun, Moon and Planets aligned and therein lies the “blueprint” of who you are. There is meaningful purpose behind every symbol in your birth chart behind every part of who you are and behind every experience you have. Your Astrological Birth Chart maps out all areas in life and describes your “nature” and your karma or destiny  in this lifetime. It is a map of your soul.  Your natal chart will reveal all of who you are and you are unique. I will discuss the positive aspects of your personality and how these qualities  can be enhanced and also point out challenging aspects  so you can become aware and begin to focus on becoming empowered and therefore inspire you to reach your highest potential..
                     </li>
                     <br>
                     <li>
                       <h6>Astrological Transit Chart Reading</h6>
-                      What is happening right now? What areas of your life are being highlighted?  All of these questions can be answered by looking at where the planets are "traveling" through your natal chart now and in the upcoming year. A transit chart reading is invaluable for planning the year ahead. What is your focus? Is it planetarily supported? Questions that we can focus on are Self, Finances, Family, Real Estate, Communication, Children, Work, Relationships, Education, Career, Friends, and Mental Health and more.
-                    </li>
+                      An Astrological Transit reading will inform you of what is happening for you right now and the year ahead. It highlights all the areas of your life that are energized and should be focused on .  A transit chart reading is invaluable for planning what the up and coming future holds for you.  I will also answer any questions of concern such as Self, Finances, Family, Real Estate, Children, Relationships, Education, Career and more. My goal is to bring you clarity and for you to be informed so that you be prepared to live your best life.                    </li>
                   </ul>
                 </p>
               </div>
               <div class="card-body price">
                 <p class="card-text lead">
-                  First-time Reading (Natal and Transit), $150.<br>
-                  Stand-Alone 1 Hour Session, $85.
+                  1 Hour Session
                 </p>
               </div>
             </div>
@@ -278,7 +298,7 @@
 
           <div class="col-sm-6 mt-4">
             <div class="card" style="">
-              <img src="img/lotus.jpg" class="card-img-top" alt="">
+              <img src="img/hourglass.jpeg" class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">Past Life Regression Therapy</h5>
                 <p class="card-text">
@@ -289,7 +309,7 @@
               </div>
               <div class="card-body price">
                 <p class="card-text lead">
-                  2 Hour Session, $250
+                  2 Hour Session
                 </p>
               </div>
             </div>
@@ -302,7 +322,7 @@
               <div class="card-body">
                 <h5 class="card-title">Breakthrough Session (BTS)</h5>
                 <p class="card-text">
-                  <p>A Personal MER Breakthrough Session is a 8--10 hour NLP Session that is spaced over a few days. A BTS is designed to work on an entire area of life to eliminate all that is holding you back and creates momentum, motivation and success! Areas of concentration are Relationships, Family, Career, Health & Fitness, Personal Growth & Development and Spirituality. The purpose of a BTS is to discover the "Greater Problem", the "Root Cause", the "Block" that is holding you back. Once discovered, we release what is no longer serving you by working with all layers of the mind with MER: Mental Emotional Release Timeline Therapy. When you transform one area of life, the positive results trickle down to others! A NLP Personal Breakthrough Session is quite literally the most transformative thing you will ever do in your life.</p>
+                  <p>A Personal MER Breakthrough Session is a 8--10 hour NLP Session that is spaced over a few days. A BTS is designed to work on an entire area of life to eliminate all that is holding you back and creates momentum, motivation and success! Areas of concentration are Relationships, Family, Career, Health & Fitness, Personal Growth & Deveopment and Spirituality. The purpose of a BTS is to discover the "Greater Problem", the "Root Cause", the "Block" that is holding you back. Once discovered, we release what is no longer serving you by working with all layers of the mind with MER: Mental Emotional Release Timeline Therapy. When you transform one area of life, the positive results trickle down to others! A NLP Personal Breakthrough Session is quite literally the most transformative thing you will ever do in your life.</p>
 
                   <p>During the Breakthrough Session we will:</p>
                   <ul>
@@ -317,7 +337,7 @@
               </div>
               <div class="card-body price">
                 <p class="card-text lead">
-                  8 Hour Session + Follow-Up 1 Hour Coaching Session, $1500
+                  8 Hour Session + Follow-Up 1 Hour Coaching Session
                 </p>
               </div>
             </div>
@@ -328,12 +348,12 @@
 
         <div id="testimonials" class="row text-center">
           <div class="col-md-12 text-center">
-            <h1>Testimonials</h1>
+            <h1>What Clients are Saying</h1>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 mt-3">
-            <figure class="card text-left mb-0 p-4">
+            <figure class="card text-left mb-0 p-4" style="background-color: var(--light-pink)">
               <p>I had the pleasure of having my astrological chart completed and read by the best astrologer I've ever come across, and I've had my chart done numerous times. What made it the best was the time Christine took to go over each article and house as well as the meanings, and how it applied to me personally. This is a rarity. At the end, she did a quick synopsis of what we went over and asked if there were any questions. She was so thorough I could not think of one. HIGHLY RECOMMENDED!!</p>
               <figcaption class="blockquote-footer text-end mb-0">
                 Rose M
@@ -342,7 +362,7 @@
           </div>
 
            <div class="col-md-6 mt-3">
-            <figure class="card text-left mb-0 p-4">
+            <figure class="card text-left mb-0 p-4" style="background-color: var(--light-pink)">
               <p>Working with Christine was a big turning point for me in my grief journey. She facilitated an MER breakthrough session, which enabled me to heal with more ease, release limiting beliefs, and flourish in my new business and in my relationships. Christine's compassion is unmatched and her knowledge of techniques to facilitate transformation and growth is extensive. I am so grateful to have worked with Christine at a vulnerable time in my life with grief and loss.</p>
               <figcaption class="blockquote-footer text-end mb-0">
                 Diane B
@@ -353,7 +373,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 mt-3">
-            <figure class="card text-left mb-0 p-4">
+            <figure class="card text-left mb-0 p-4" style="background-color: var(--light-pink)">
               <p>I just wanted to thank you again for an amazing reading! You are awesome! I feel a little hope which is rare these days. You went above and beyond. Thank you!</p>
               <figcaption class="blockquote-footer text-end mb-0">
                 Amy L
@@ -361,7 +381,7 @@
             </figure>
           </div>
           <div class="col-md-8 mt-3">
-            <figure class="card text-left mb-0 p-4">
+            <figure class="card text-left mb-0 p-4" style="background-color: var(--light-pink)">
               <p>I had the pleasure of having my astrological chart read by Christine Byrnes. Let’s just say I was blown away by the accuracy of my life and experiences. Christine patiently explained every detail in each house and how it all applied to me specifically. Christine was personable, patient, and flawless in her presentation. What an amazing experience!</p>
               <figcaption class="blockquote-footer text-end mb-0">
                 LB
@@ -370,9 +390,9 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row pb-5">
           <div class="col-md-12 mt-3">
-            <figure class="card text-left mb-0 p-4">
+            <figure class="card text-left mb-0 p-4" style="background-color: var(--light-pink)">
               <p>If you ever wondered why, you developed certain narratives about who you are, give past life regression a try. My experience with Christine Byrnes brought to light many of the answers I searched for, but never imagined I could resolve. It’s an incredibly comfortable journey though some uncomfortable experiences. She is skilled and caring. She listens and processes every word with an insight that comes from not only education, but an innate ability to delve into the mind and heart of her clients. Take it from a skeptic, an eye opening you won’t soon forget.</p>
               <figcaption class="blockquote-footer text-end mb-0">
                 Kathleen D
